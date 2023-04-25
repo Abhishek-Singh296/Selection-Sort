@@ -4,6 +4,8 @@ This algorithm chooses the minimum element from the list of elements and swaps i
 
 This selection sort in C is an in-place algorithm as it swaps the elements in the list itself. It does not require an extra list or array to sort the elements.
 
+---
+
 ## __Working__
 1.Set the first element as minimum.
 
@@ -33,6 +35,8 @@ The algorithm of the Selection Sort in C is as follows -
 - Repeat the above process until the whole array is sorted.
 - The whole algorithm has been depicted with the help of a pictorial representation below.
 ```
+
+---
 
 ## __Code__
 ```
@@ -71,3 +75,9 @@ int main()
   SelectionSort(arr,5);
 }
 ```
+
+---
+
+## __Output__
+![Screenshot 2023-04-24 023757](https://user-images.githubusercontent.com/113619312/234352365-194efc61-06a3-4595-9f67-e20540c8ca04.png)
+
