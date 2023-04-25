@@ -10,7 +10,7 @@ This selection sort in C is an in-place algorithm as it swaps the elements in th
 <img width="377" alt="Selection-sort-0-initial-array (1)" src="https://user-images.githubusercontent.com/113619312/234350839-8bfeafd7-c961-45c6-889c-3d1aec78d3cb.png">
 
 2.Compare minimum with the second element. If the second element is smaller than minimum, assign the second element as minimum.
-Compare minimum with the third element. Again, if the third element is smaller, then assign minimum to the third element otherwise do nothing. The process goes on until the last element.
+Compare minimum with the third element. Again, if the third element is smaller, then assign minimum to the third element otherwise do nothing.The process goes on until the last element.
 
 <img width="377" alt="Selection-sort-0-comparision" src="https://user-images.githubusercontent.com/113619312/234351030-b0763d17-0f8f-41e8-98bd-ed17ccbca30e.png">
 
