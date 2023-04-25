@@ -10,6 +10,7 @@ This selection sort in C is an in-place algorithm as it swaps the elements in th
 
 2.Compare minimum with the second element. If the second element is smaller than minimum, assign the second element as minimum.
 Compare minimum with the third element. Again, if the third element is smaller, then assign minimum to the third element otherwise do nothing. The process goes on until the last element.
+
 <img width="377" alt="Selection-sort-0-comparision" src="https://user-images.githubusercontent.com/113619312/234351030-b0763d17-0f8f-41e8-98bd-ed17ccbca30e.png">
 
 3.After each iteration, minimum is placed in the front of the unsorted list.
@@ -32,4 +33,39 @@ The algorithm of the Selection Sort in C is as follows -
 ```
 
 ## __Code__
+```
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+int SelectionSort(int a[], int array_size)
+{
+    int i,j, smallest,temp;
+    for(i=0;i<array_size-1;i++)
+    {
+      smallest=i;
+      for(j=i+1;j<array_size;j++)
+      {
+          if(a[smallest]>a[j])
+          smallest=j;
+      }
+      if(i!=smallest)
+      {
+                     temp=a[i];
+                     a[i]=a[smallest];
+                     a[smallest]=temp;
+      }
+    }
+    printf("\nSeelctionSorted Data :");
+    for (i = 0; i < array_size; i++) {
+    printf("\t%d", a[i]);
+}
+}
+
+int main()
+{
+  int ret;
+  int arr[5]={32,5,7,3,72};
+  SelectionSort(arr,5);
+}
 ```
